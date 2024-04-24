@@ -1,16 +1,16 @@
 # evolivion
 ## Asistente de certificación en la norma mexicana NMX-R-025-SCFI-2015
 
-## Linux
+### Linux
 sudo apt-get install python3-venv    # If needed
 python3 -m venv .venv
 source .venv/bin/activate
 
-## macOS
+### macOS
 python3 -m venv .venv
 source .venv/bin/activate
 
-## Windows
+### Windows
 py -3 -m venv .venv
 .venv\scripts\activate
 
