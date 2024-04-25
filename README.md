@@ -15,5 +15,5 @@
   .venv\scripts\activate
 
 # ___________________________
-python -m pip install --upgrade pip
-python -m pip install django
+  python -m pip install --upgrade pip
+  python -m pip install django
