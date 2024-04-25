@@ -1,5 +1,5 @@
 # evolivion
-## Asistente de certificación en la norma mexicana NMX-R-025-SCFI-2015
+Asistente de certificación en la norma mexicana NMX-R-025-SCFI-2015
 
 ### Linux
   sudo apt-get install python3-venv    # If needed
@@ -14,7 +14,7 @@
   py -3 -m venv .venv
   .venv\scripts\activate
 
-# ___________________________
+# Install
   python -m pip install --upgrade pip
 
   python -m pip install django
