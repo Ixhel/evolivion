@@ -4,5 +4,29 @@ Evolivion | Tus documentos
 {% endblock %}
 {% block contenido %}
 <h1>Tus documentos</h1>
-<p>Documentos generados</p>
+<p>Documentos generados para la empresa: </p>
+    {% if corp_list  %}
+        <table class="corp_list">
+            <thread>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Empresa</th>
+                </tr>
+            </thread>
+            <tbody>
+                {% for empresa in corp_list %}
+                <tr>
+                    <td>{{ empresa.log_date | date:'d M Y' }}</td>
+                    <td>{{ empresa.log_date | time:'H:i:s' }}</td>
+                    <td>{{ empresa.empresa }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>
+            No hay documentos generados o datos de tu empresa. Usa el <a href={% url "inicio" %}> formulario Evolivion</a>.
+        </p>
+    {% endif %}
 {% endblock %}

@@ -3,7 +3,15 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: content-box;
 }
-	
+
+input[name=empresa] {
+    width: 80%;
+}
+
+.corp_list th,td {
+    text-align: left;
+    padding-right: 15px;
+}
 .menu {
     position: fixed;
     height: 100vh;

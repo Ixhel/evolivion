@@ -4,5 +4,10 @@
 {% endblock %}
 {% block contenido %}
 <h1>Evolivion</h1>
-<p>Lorem ipsum</p>
+<p>Datos de la empresa</p>
+<form method="POST" class="log-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="save btn btn-default">Enviar</button>
+</form>
 {% endblock %}

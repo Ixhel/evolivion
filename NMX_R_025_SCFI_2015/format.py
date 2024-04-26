@@ -12,7 +12,7 @@ def format_name (request, name):
     else:
         clean_name = "usr"
     
-    content = "Hola " + clean_name + "! Son las: " + formatted_now
+    content = "Usuario: " + clean_name + "Sesión iniciada: " + formatted_now
     
     return HttpResponse(content)
 
