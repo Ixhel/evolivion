@@ -14,6 +14,9 @@ from django.shortcuts import render
 def inicio(request):
     return render(request, "NMX_R_025_SCFI_2015/inicio.html")
 
+def documentos(request):
+    return render(request, "NMX_R_025_SCFI_2015/documentos.html")
+
 def acerca(request):
     return render(request, "NMX_R_025_SCFI_2015/acerca.html")
 
