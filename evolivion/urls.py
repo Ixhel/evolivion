@@ -22,5 +22,4 @@ urlpatterns = [
     path("", include("NMX_R_025_SCFI_2015.urls")),
     path('admin/', admin.site.urls),
 ]
-
 urlpatterns += staticfiles_urlpatterns()

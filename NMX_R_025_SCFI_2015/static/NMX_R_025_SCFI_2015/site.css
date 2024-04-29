@@ -12,6 +12,12 @@ input[name=empresa] {
     text-align: left;
     padding-right: 15px;
 }
+
+.result_list th,td {
+    text-align: left;
+    padding-right: 15px;
+}
+
 .menu {
     position: fixed;
     height: 100vh;
