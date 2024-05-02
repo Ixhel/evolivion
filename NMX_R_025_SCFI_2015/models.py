@@ -14,5 +14,6 @@ class LogEval(models.Model):
     #Ingesar variables requeridas en la base de datos para calcular resultado
     #Evaluar area de seguridad para despliegue de resultados (Verificar que no se pueda modificar<generar pdf>)
     #
+    
     def __str__(self) -> str:
         return super().__str__()
