@@ -1,3 +1,4 @@
+# print("Asistente para certificación en la Norma en Igualdad Laboral y No Discriminación NMX-R-025.SCFI-2015")
 from typing import Any
 from django import forms
 from django.utils.timezone import datetime
@@ -9,10 +10,6 @@ from NMX_R_025_SCFI_2015.forms import LogMessageForm
 from NMX_R_025_SCFI_2015.forms import LogEval
 from NMX_R_025_SCFI_2015.forms import LogEvalForm
 
-
-
-# print(request.build_absolute_uri())
-# print("Asistente para certificación en la Norma en Igualdad Laboral y No Discriminación NMX-R-025.SCFI-2015")
 #    return render(request, 'NMX_R_025_SCFI_2015', 
 #                  {
 #                      'name': name,
