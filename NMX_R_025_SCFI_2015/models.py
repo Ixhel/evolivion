@@ -18,15 +18,13 @@ class LogEval(models.Model):
         return super().__str__()
     
 class Sector(models.Model):
-    PUBLICO = "PU"
-    PRIVADO = "PR"
-    SOCIAL = "SO"
     SECTOR_TIPO = {
-        PUBLICO: "Público",
-        PRIVADO: "Privado",
-        SOCIAL:"Social"
+        "PUBLICO": "Público",
+        "PRIVADO": "Privado",
+        "SOCIAL":"Social"
     }
-    sector = models.CharField(max_length=2, choices=SECTOR_TIPO, unique=True, primary_key=True)
+    id_sector = models.Index
+    sector = models.CharField(max_length=7, choices=SECTOR_TIPO)
 
 class Sector_productivo(models.Model):
     tamaño = models.CharField(max_length=7)
@@ -48,3 +46,4 @@ class Empresa(models.Model):
     id_sector = models.ForeignKey(Sector, on_delete=models.CASCADE)
     id_sector_productivo = models.ForeignKey(Sector_productivo, on_delete=models.CASCADE)
     id_giro = models.ForeignKey(Giro, on_delete=models.CASCADE)
+    
