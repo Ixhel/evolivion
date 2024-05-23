@@ -13,12 +13,8 @@
     <nav>
         <ul>
             <li><a href="{% url 'inicio' %}">Evolivion</a></li>
-            <li><a href="{% url 'documentos' %}">NMX-R-025-SCFI-2015</a>
-                <li><a href="{% url 'evaluacion' %}">Evaluación</a></li>
-            </li>
-            <li><a href="{% url 'documentos' %}">NOM-035</a>
-                <li><a href="{% url 'evaluacion' %}">Evaluación</a></li>
-            </li>
+            <li><a href="{% url 'documentos' %}">NMX-R-025-SCFI-2015</a></li>
+            <ul><li><a href="{% url 'evaluacion' %}">Evaluación</a></li></ul>
             <li><a href="{% url 'acerca' %}">Acerca de</a></li>
             <li><a href="{% url 'contacto' %}">Contacto</a></li>
 		</ul>
